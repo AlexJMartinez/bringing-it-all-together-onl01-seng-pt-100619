@@ -101,13 +101,10 @@ class Dog
     sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
   DB[:conn].execute(sql, self.name, self.breed, self.id)
 end
-=======
+
   def Dog::create_table
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
     Dog.create_table
   end
-
->>>>>>> b13b7fcb6a0871785ceb74d2003d4d45e2604964
-
 
 end
